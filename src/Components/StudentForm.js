@@ -20,6 +20,7 @@ return (
 	<Formik {...props} validationSchema={validationSchema}>
 		<Form>
 		<FormGroup>
+            <label name="Name:">Name:</label>
 			<Field name="name" type="text"
 				className="form-control" />
 			<ErrorMessage
@@ -29,6 +30,7 @@ return (
 			/>
 		</FormGroup>
 		<FormGroup>
+            <label name="Email:">Email:</label>
 			<Field name="email" type="text"
 				className="form-control" />
 			<ErrorMessage
@@ -38,6 +40,7 @@ return (
 			/>
 		</FormGroup>
 		<FormGroup>
+            <label name="RollNo:">RollNo:</label>
 			<Field name="rollno" type="number"
 				className="form-control" />
 			<ErrorMessage
