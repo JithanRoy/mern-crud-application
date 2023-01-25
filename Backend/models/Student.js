@@ -1,20 +1,18 @@
 const mongoose = require('mongoose');
-const { string } = require('yup/lib/locale');
 const Schema = mongoose.Schema;
 
-
 let studentSchema = new Schema({
-    name: {
-        type: string
-    },
-    email: {
-        type: string
-    },
-    rollno: {
-        type: Number
-    }
+name: {
+	type: String
+},
+email: {
+	type: String
+},
+rollno: {
+	type: Number
+}
 }, {
-    collection:'students'
+	collection: 'students'
 })
 
-module.exports = mongoose.model('student', studentSchema)
+module.exports = mongoose.model('Student', studentSchema)
